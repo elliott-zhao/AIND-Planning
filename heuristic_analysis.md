@@ -103,4 +103,9 @@ Unload(C2, P2, SFO)
 
 ## Summary
 
-Neither the positive search nor the reverse search is as good as the heuristic. A* search with ignoring preconditions works best for all A* algorithms. Because it relaxed the problem but not overestimating the goal.
+Neither the positive search nor the reverse search is as good as the heuristic. 
+
+A* search with ignoring preconditions works best for all A* algorithms. Because it relaxed the problem but not overestimating the goal. Its heuristic is simpler than level-sum heuristic .It drops all preconditions from actions, and every actions becomes applicable in every state, and any single goal fluent can be achieved in one step.
+
+Depth-first search results in unlimited execution because there is no predefined maximum search depth.So you can solve this problem by defining a maximum search depth in advance.
+
